@@ -42,13 +42,13 @@ Run the command `yarn add -D husky` to add the package as a dependency. We will 
 
 Finally, add this snippet to your `package.json`:
 
-`json 
+```json 
 "husky": { 
-  "hooks": { 
-    "pre-commit": "lint-staged" 
-   } 
+    "hooks": { 
+        "pre-commit": "lint-staged" 
+    } 
  }, 
  "lint-staged": { 
-   "./src/*.js": [ "yarn prettier --write", "eslint src/*.js" ] 
+    "./src/*.js": [ "yarn prettier --write", "eslint src/*.js" ] 
  } 
-`
+```
