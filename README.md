@@ -4,6 +4,20 @@ Using create-react-app, we will be walking through a few of the configurations w
 
 We will be adding:
 
-- Prettier, our code formatter and style enforcer
-- ESLint, our linter and first defense against bugs
-- Git Hooks, lets us automatically double check correctness and format
+-   Prettier, our code formatter and style enforcer
+-   ESLint, our linter and first defense against bugs
+-   Git Hooks, lets us automatically double check correctness and format
+
+# Prettier
+
+Add the extension from the VSCode marketplace [LINK](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
+
+Also run `yarn add prettier` to add it to the project as a dependency.
+
+Next go to your VSCode settings (command , on Mac) and type 'Format' into the search bar. Ensure that the default formatter is set to `prettier-vscode` and 'Format On Save' is checked.
+
+Here we can add a `.prettierrc` file to configure our style rules. I've added one already, so feel free to change some rules and get a feel for how it works!
+
+Lastly, we can add a `.prettierignore` file to exclude parts of our code we don't want to format. Checkout the one in the project for more info.
+
+To confirm its working, run `yarn prettier -c src` to check for errors, and `yarn prettier -w src` to overwrite them.
