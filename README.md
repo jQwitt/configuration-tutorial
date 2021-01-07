@@ -21,3 +21,15 @@ Here we can add a `.prettierrc` file to configure our style rules. I've added on
 Lastly, we can add a `.prettierignore` file to exclude parts of our code we don't want to format. Checkout the one in the project for more info.
 
 To confirm its working, run `yarn prettier -c src` to check for errors, and `yarn prettier -w src` to overwrite them.
+
+# ESLint
+
+Add the extension from the VSCode marketplace [LINK](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
+
+Also run `yarn add eslint` to add it to the project as a dependency.
+
+To use existing standartization, we will just extend the AirBnb configurtion as done in this [article](https://blog.echobind.com/integrating-prettier-eslint-airbnb-style-guide-in-vscode-47f07b5d7d6a).
+
+Here we can add a `.eslintrc` file to override or add to the AirBnb rules, as well as a `.eslintrcirngore` file to exclude parts of our code we don't want to lint.
+
+To confirm its working, run `eslint src` to check for errors, and `yarn prettier -w src` to overwrite them.
